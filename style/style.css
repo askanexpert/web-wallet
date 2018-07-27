@@ -57,38 +57,6 @@
   .aae-section__container:nth-child(2n+1) {
     background-color: #fff; }
 
-.aae-section__container.header {
-  padding-top: 32px;
-  padding-bottom: 256px;
-  background: url("images/template/trapezium_yellow.svg");
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: cover;
-  margin-bottom: 6%; }
-  .aae-section__container.header > div.title {
-    font-family: "Avenir", sans-serif;
-    font-size: 75px;
-    font-weight: 700;
-    color: #ffffff;
-    text-align: center;
-    margin-top: 80px;
-    margin-left: 16%;
-    margin-right: 16%;
-    margin-bottom: 20px;
-    line-height: 1.0;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); }
-  .aae-section__container.header > div.sub-title {
-    font-family: "Avenir", sans-serif;
-    font-size: 40px;
-    font-weight: 400;
-    color: #ffffff;
-    text-align: center;
-    margin-top: 40px;
-    margin-left: 20%;
-    margin-right: 20%;
-    margin-bottom: 20px;
-    line-height: 1.25; }
-
 .aae-section__container.second {
   border-bottom: 2px solid #fff; }
 
@@ -164,14 +132,6 @@
       font-size: 1.5em;
       margin-top: 64px;
       margin-bottom: 32px; }
-  .aae-section__container.header > div.title {
-    font-size: 60px;
-    margin-left: 6%;
-    margin-right: 6%; }
-  .aae-section__container.header > div.sub-title {
-    font-size: 32px;
-    margin-left: 12%;
-    margin-right: 12%; }
   .signup-form__content > form > input.email {
     width: 40%;
     margin-left: 30%; }
@@ -185,12 +145,6 @@
     margin-left: 30%; }
   .aae-section__container > div.wrapper > div.feature__result {
     font-size: 1.25em; }
-  .aae-section__container.header > div.title {
-    font-size: 50px; }
-  .aae-section__container.header > div.sub-title {
-    font-size: 24px;
-    margin-left: 8%;
-    margin-right: 8%; }
   .signup-form__content > form > input.email {
     width: 80%;
     margin-left: 10%; }

@@ -1,17 +1,4 @@
-$font_family_1: 'Avenir', sans-serif;
-$font_family_2: 'Avenir next', sans-serif;
-$font_family_3: 'Moderneratrial', sans-serif;
-$linear_gradient_color_1: #d2e161;
-$linear_gradient_color_2: #6bb182;
-$background_color_dark: #fff;
-$background_color_light: #fff;
-$background_color_submit: #6fb57e;
-$background_color_header: #f09358;
-$background_color_footer: #f09358;
-$header_content_color: #ffffff;
-$section_content_color_action: #212121;
-$section_content_color_result: #7c7c7c;
-$notice_content_color: #ffffff;
+@import "./constants/constants.scss";
 
 #logo-image {
 	width: 15%;
@@ -80,47 +67,7 @@ $notice_content_color: #ffffff;
 		background-color: $background_color_light;
 	}
 }
-.aae-section__container.header {
-	padding-top: 32px;
-	padding-bottom: 256px;
-	//background-color: $background_color_header;
-	//background-repeat: no-repeat;
-	// background-image: url('images/template/transparent-bars.png'),
-	// linear-gradient(
-	// 	to top right,
-	// 	$linear_gradient_color_1,
-	// 	$linear_gradient_color_2);
-	background: url('images/template/trapezium_yellow.svg');
-	background-repeat: no-repeat;
-	background-position: bottom;
-	background-size: cover;
-	margin-bottom: 6%;
-	>div.title {
-		font-family: $font_family_1;
-		font-size: 75px;
-		font-weight: 700;
-		color: $header_content_color;
-		text-align: center;
-		margin-top: 80px;
-		margin-left: 16%;
-		margin-right: 16%;
-		margin-bottom: 20px;
-		line-height: 1.0;
-		text-shadow: 2px 2px 8px rgba(0,0,0,0.1);
-	}
-	>div.sub-title {
-		font-family: $font_family_1;
-		font-size: 40px;
-		font-weight: 400;
-		color: $header_content_color;
-		text-align: center;
-		margin-top: 40px;
-		margin-left: 20%;
-		margin-right: 20%;
-		margin-bottom: 20px;
-		line-height: 1.25;
-	}
-}
+
 .aae-section__container.first {
 	//background-image: url('./images/template/rect_back.svg');
 }
@@ -232,18 +179,6 @@ $notice_content_color: #ffffff;
 			}
 		}
 	}
-	.aae-section__container.header {
-		>div.title {
-			font-size: 60px;
-			margin-left: 6%;
-			margin-right: 6%;
-		}
-		>div.sub-title {
-			font-size: 32px;
-			margin-left: 12%;
-			margin-right: 12%;
-		}
-	}
 	.signup-form__content {
 		>form {
 			>input.email {
@@ -267,16 +202,6 @@ $notice_content_color: #ffffff;
 			>div.feature__result {
 				font-size: 1.25em;
 			}
-		}
-	}
-	.aae-section__container.header {
-		>div.title {
-			font-size: 50px;
-		}
-		>div.sub-title {
-			font-size: 24px;
-			margin-left: 8%;
-			margin-right: 8%;
 		}
 	}
 	.signup-form__content {

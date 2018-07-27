@@ -7,7 +7,13 @@ class Header extends Component {
       <div className='aae-section__container header'>
         <img id='logo-image' src={`../../style/images/${this.props.logoImage}`}/>
         <div className='title'> {this.props.title} </div>
-        <img id='main-splash' src={`../../style/images/${this.props.mainSplashImage}`}/>
+        <div className='wrapper-container'>
+          <div className='wrapper left'>
+            <img id='main-splash' src={`../../style/images/${this.props.mainSplashImage}`}/>
+          </div>
+          <div className='wrapper right'>
+          </div>
+        </div>      
       </div>
     );
   }
