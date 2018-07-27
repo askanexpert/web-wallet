@@ -58,7 +58,7 @@ class Footer extends Component {
     return (
       <div className='aae-section__container footer'>
         <div className='signup-form__content'>
-        <div className='title'> Sign up for early access! </div>
+        <div className='title'> Submit request for access! </div>
           <form className='signup-form__form' onSubmit={this.handleSubmit}>
             <input type='text'
               value={this.state.email}
