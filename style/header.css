@@ -101,7 +101,8 @@
         height: 48px;
         color: #fff;
         background-color: #6fb57e;
-        display: block; }
+        display: block;
+        outline: none; }
         .aae-section__container.header > div.wrapper-container > div.wrapper.right > div.login-form > button.submit-button:hover {
           opacity: 0.75;
           cursor: pointer; }

@@ -16,6 +16,11 @@ npm run dev-watch
 ```
 Navigate to localhost:8080 to see template
 
+# Pending Tasks
+- [ ] Handle incorrect login (Show some message)
+- [ ] Handle invalid email in header (Show some message)
+- [ ] Handle invalid email in footer gracefully (Don't show modal)
+
 # Optimizations
 Optimizations as per the [google optimizer tool](https://developers.google.com/speed/pagespeed/insights/?url=askanexpert.social&tab=desktop)
 - [x] Compress PNG images
