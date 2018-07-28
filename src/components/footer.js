@@ -1,7 +1,7 @@
 import React,{Component} from 'react';
+import {connect} from 'react-redux';
 
 import validator from 'email-validator';
-import {signup} from '../actions/index';
 
 import AaeModal from './reusable/aae_modal';
 
@@ -87,7 +87,7 @@ class Footer extends Component {
       return;
     }
 
-    this.props.signup(this.state.email);
+    this.props.leadCapture(this.state.email);
   }
 }
 

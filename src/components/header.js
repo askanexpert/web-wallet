@@ -2,7 +2,28 @@ import React,{Component} from 'react';
 import {connect} from 'react-redux';
 
 class Header extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      email: '',
+      password: ''
+    };
+
+    this.handlePasswordChange = this.handlePasswordChange.bind(this);
+    this.handleEmailChange = this.handleEmailChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
   render() {
+
+    if(this.props.login.loggedin) {
+      return(
+        <div className='aae-section__container header'>
+          Success!
+        </div>
+      );
+    }
+
     return (
       <div className='aae-section__container header'>
         <img id='logo-image' src={`../../style/images/${this.props.logoImage}`}/>
@@ -29,19 +50,43 @@ class Header extends Component {
 
               <div className='input-label'> EMAIL </div>
               <input type='text'
+                value={this.state.email}
+                onChange={this.handleEmailChange}
                 className='email'
                 placeholder='Email...'/>
               <div className='input-label'> PASSWORD </div>
               <input type='password'
+                value={this.state.password}
+                onChange={this.handlePasswordChange}
                 className='email'
                 placeholder='Password...'/>
-              <button type='submit' className='submit-button'> Login </button>
+              <button type='submit'
+              onClick={this.handleSubmit}
+              className='submit-button'> Login </button>
               </div>
           </div>
         </div>
       </div>
     );
   }
+
+  handleEmailChange(event) {
+    this.setState({
+      email: event.target.value
+    });
+  }
+
+  handlePasswordChange(event) {
+    this.setState({
+      password: event.target.value
+    });
+  }
+
+  handleSubmit(event) {
+    event.preventDefault();
+    this.props.login(this.state.email, this.state.password);
+  }
+
 }
 
 export default Header;
