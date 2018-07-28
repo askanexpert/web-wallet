@@ -27,7 +27,7 @@ Optimizations as per the [google optimizer tool](https://developers.google.com/s
 - [ ] Handle invalid email in footer gracefully (Don't show modal)
 
 # Version 
-- Version 1.0
+- Version 1.0: Basic Signup and Login
 - Basic Signup and Login Flow integrated using Redux Thunk
 
 # Author  
