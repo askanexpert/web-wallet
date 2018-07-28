@@ -21,6 +21,15 @@ Optimizations as per the [google optimizer tool](https://developers.google.com/s
 - [x] Compress PNG images
 - [ ] Minify CSS
 
+# Pending Tasks
+- [ ] Handle incorrect login (Show some message)
+- [ ] Handle invalid email in header (Show some message)
+- [ ] Handle invalid email in footer gracefully (Don't show modal)
+
+# Version 
+- Version 1.0: Basic Signup and Login
+- Basic Signup and Login Flow integrated using Redux Thunk
+
 # Author  
   - Tejas Nikumbh [2018]
     - Email: tejnikumbh@gmail.com

@@ -1,14 +1,14 @@
 import React from 'react';
 
-import {ACTION_LEAD_CAPTURE} from '../actions/index';
+import {ACTION_LOGIN} from '../actions/index';
 
 export default function(state = {}, action) {
     // In case of successful submission
     switch(action.type) {
-      case ACTION_LEAD_CAPTURE:
+      case ACTION_LOGIN:
         return {
-          submitted: true,
-          email: action.payload.data.lead.email
+          loggedin: true,
+          email: action.payload.data.email
         };
       default:
         return state;

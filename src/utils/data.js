@@ -16,7 +16,7 @@ export const sectionData = [
     work to make an informed decision.`
   },
   {
-    image: 'custom/sections/social.svg',
+    image: 'custom/sections/social.png',
     title: 'Schedule sessions & Chat within your favorite apps',
     description: `With our solution, we provide intelligent bot integrations with
     popular social channels such as slack, facebook and telegram so that you can

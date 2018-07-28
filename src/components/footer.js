@@ -1,7 +1,7 @@
 import React,{Component} from 'react';
+import {connect} from 'react-redux';
 
 import validator from 'email-validator';
-import {signup} from '../actions/index';
 
 import AaeModal from './reusable/aae_modal';
 
@@ -58,7 +58,7 @@ class Footer extends Component {
     return (
       <div className='aae-section__container footer'>
         <div className='signup-form__content'>
-        <div className='title'> Sign up for early access! </div>
+        <div className='title'> Submit request for access! </div>
           <form className='signup-form__form' onSubmit={this.handleSubmit}>
             <input type='text'
               value={this.state.email}
@@ -87,7 +87,7 @@ class Footer extends Component {
       return;
     }
 
-    this.props.signup(this.state.email);
+    this.props.leadCapture(this.state.email);
   }
 }
 

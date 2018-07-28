@@ -1,12 +1,25 @@
 import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
 
 import Section from '../components/section';
-import Header from '../components/header';
+import Header from '../containers/header';
 import Footer from '../containers/footer';
 
 import * as Constants from '../utils/data';
 
 export default class App extends Component {
+
+  handleScrollToElement(event) {
+      console.log(this.refs);
+      const signupNode = ReactDOM.findDOMNode(this.refs.footer)
+
+      var i = 10;
+      var int = setInterval(function() {
+        window.scrollTo(0, i);
+        i += 20;
+        if (i >= signupNode.offsetTop) clearInterval(int);
+      }, 1);
+  }
 
   render() {
     return (
@@ -14,7 +27,8 @@ export default class App extends Component {
         <Header
           logoImage={Constants.headerData.logoImage}
           title={Constants.headerData.title}
-          mainSplashImage={Constants.headerData.mainSplashImage}/>
+          mainSplashImage={Constants.headerData.mainSplashImage}
+          navigateFunction={this.handleScrollToElement.bind(this)}/>
         <Section
           sectionNum='first'
           image={Constants.sectionData[0].image}
@@ -31,6 +45,7 @@ export default class App extends Component {
           title={Constants.sectionData[2].title}
           description={Constants.sectionData[2].description}/>
         <Footer
+          ref='footer'
           title={Constants.footerData.title}
           notice={Constants.footerData.notice}/>
       </div>
