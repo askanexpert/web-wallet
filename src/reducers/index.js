@@ -4,7 +4,7 @@ import LoginReducer from './reducer_login';
 
 const rootReducer = combineReducers({
   lead: LeadReducer,
-  login: LoginReducer
+  user: LoginReducer
 });
 
 export default rootReducer;

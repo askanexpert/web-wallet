@@ -15,8 +15,7 @@ class Header extends Component {
   }
 
   render() {
-
-    if(this.props.login.loggedin) {
+    if(this.props.user.loggedin) {
       return(
         <div className='aae-section__container header'>
           Success!
@@ -83,7 +82,7 @@ class Header extends Component {
   }
 
   handleSubmit(event) {
-    event.preventDefault();
+    //event.preventDefault();
     this.props.login(this.state.email, this.state.password);
   }
 

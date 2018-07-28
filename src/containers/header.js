@@ -3,8 +3,8 @@ import {login} from '../actions/index';
 
 import Header from '../components/header';
 
-function mapStateToProps({login}) {
-  return {login};
+function mapStateToProps({user}) {
+  return {user};
 }
 
 export default connect(mapStateToProps, {login})(Header);

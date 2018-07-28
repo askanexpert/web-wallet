@@ -8,7 +8,7 @@ export default function(state = {}, action) {
       case ACTION_LOGIN:
         return {
           loggedin: true,
-          email: action.payload.data.login.email
+          email: action.payload.data.email
         };
       default:
         return state;

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
 import Section from '../components/section';
-import Header from '../components/header';
+import Header from '../containers/header';
 import Footer from '../containers/footer';
 
 import * as Constants from '../utils/data';
