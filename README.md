@@ -16,15 +16,19 @@ npm run dev-watch
 ```
 Navigate to localhost:8080 to see template
 
+# Optimizations
+Optimizations as per the [google optimizer tool](https://developers.google.com/speed/pagespeed/insights/?url=askanexpert.social&tab=desktop)
+- [x] Compress PNG images
+- [ ] Minify CSS
+
 # Pending Tasks
 - [ ] Handle incorrect login (Show some message)
 - [ ] Handle invalid email in header (Show some message)
 - [ ] Handle invalid email in footer gracefully (Don't show modal)
 
-# Optimizations
-Optimizations as per the [google optimizer tool](https://developers.google.com/speed/pagespeed/insights/?url=askanexpert.social&tab=desktop)
-- [x] Compress PNG images
-- [ ] Minify CSS
+# Version 
+- Version 1.0
+- Basic Signup and Login Flow integrated using Redux Thunk
 
 # Author  
   - Tejas Nikumbh [2018]
