@@ -1,5 +1,6 @@
 import React,{Component} from 'react';
 import {connect} from 'react-redux';
+import {Redirect} from 'react-router-dom';
 
 class Header extends Component {
   constructor(props) {
@@ -18,7 +19,7 @@ class Header extends Component {
     if(this.props.user.loggedin) {
       return(
         <div className='aae-section__container header'>
-          Success!
+          <Redirect to='/home'/>
         </div>
       );
     }
